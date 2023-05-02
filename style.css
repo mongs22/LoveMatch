@@ -1,0 +1,67 @@
+/* .logo {
+  width: 50px; /* Lebar logo */
+  /*height: 50px; /* Tinggi logo */
+  /*margin-right: 10px;  Jarak margin kanan */
+/*} */
+
+/* Reset gaya default */
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Kontainer halaman awal */
+body {
+  background-image: url('home.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-color: #ffeded; /* Warna latar belakang */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 100px; /* Jarak atas */
+}
+
+/* Judul halaman awal */
+h1 {
+  font-size: 36px;
+  color: #ff007f; /* Warna teks judul */
+}
+
+/* Nama website */
+h2 {
+  font-size: 24px;
+  color: #ff4d94; /* Warna teks nama website */
+  margin-top: 10px; /* Jarak atas */
+}
+
+/* Deskripsi kuis cinta */
+p {
+  font-size: 18px;
+  color: #ff4d94; /* Warna teks deskripsi */
+  margin-top: 20px; /* Jarak atas */
+  margin-bottom: 40px; /* Jarak bawah */
+}
+
+/* Tombol Mulai */
+button {
+  background-color: #ff4d94; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  font-size: 18px;
+  padding: 12px 24px; /* Padding tombol */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transisi hover */
+}
+
+/* Efek hover pada tombol Mulai */
+button:hover {
+  background-color: #ff007f; /* Warna latar belakang tombol saat dihover */
+}

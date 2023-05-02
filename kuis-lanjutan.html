@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hasil Kuis Cinta</title>
+  <link rel="stylesheet" type="text/css" href="gaya.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Hasil Kuis Cinta</h1>
+    <p id="result-msg"></p>
+    <button onclick="location.href='kuis.html'">Kembali</button>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    // Ambil parameter dari URL
+    const params = new URLSearchParams(window.location.search);
+    const loveResult = params.get('love');
+
+    // Tampilkan pesan sesuai hasil kuis
+    const resultMsg = document.getElementById('result-msg');
+    if (loveResult === 'yes') {
+      resultMsg.textContent = 'Kamu berhasil membuat dia menyukaimu!';
+    } else if (loveResult === 'no') {
+      resultMsg.textContent = 'Kamu sudah berhasil membuat dia membencimu.';
+    }
+  </script>
+</body>
+</html>

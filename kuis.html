@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Love Match</title>
+    <link rel="stylesheet" type="text/css" href="gaya.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Love Match</h1>
+      <form>
+        <input type="text" id="male" placeholder="Masukkan nama pria...">
+        <input type="text" id="female" placeholder="Masukkan nama wanita...">
+        <br><br>
+        <button type="button" id="love-btn" onclick="redirectToKuisLanjutan('yes')">Cinta - Benci</button>
+        <button type="button" id="hate-btn" onclick="redirectToKuisLanjutan('no')">Benci - Cinta</button>
+        <a href="index.html"><button type="button">Reset</button></a>
+      </form>
+      </div>
+    </div>
+    <script>
+       // Fungsi untuk mengarahkan ke halaman lanjutan dengan parameter yang sesuai
+    function redirectToKuisLanjutan(loveResult) {
+      const male = document.getElementById('male').value;
+      const female = document.getElementById('female').value;
+      // Menggunakan window.location untuk mengarahkan ke halaman kuis-lanjutan.html dengan parameter love
+      window.location.href = `kuis-lanjutan.html?love=${loveResult}&male=${male}&female=${female}`;
+    }
+    </script>
+  </body>
+</html>
